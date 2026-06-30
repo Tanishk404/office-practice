@@ -16,7 +16,7 @@ export async function GET(
         return NextResponse.json({ error: "PDF not found in GridFS" }, { status: 404 });
     }
 
-    return new NextResponse(buffer, {
+    return new NextResponse(new Uint8Array(buffer), {
       headers: {
         "Content-Type": "application/pdf",
         "Content-Disposition": "inline",
