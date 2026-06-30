@@ -12,8 +12,8 @@ cloudinary.config({
 // rahega. Isse koi chhed-chhad nahi ki gayi hai.
 // ─────────────────────────────────────────────────────────────────────────────
 async function uploadToCloudinary(file: File, folderName: string): Promise<string> {
-  const bytes = await file.array();
-  const  = .from(bytes);
+  const bytes = await file.arrayBuffer();
+  const buffer = Buffer.from(bytes);
 
   return new Promise((resolve, reject) => {
     const uploadStream = cloudinary.uploader.upload_stream(
@@ -48,8 +48,8 @@ async function uploadToCloudinary(file: File, folderName: string): Promise<strin
 // asar nahi padega.
 // ─────────────────────────────────────────────────────────────────────────────
 export async function uploadImageToCloudinary(file: File, folderName: string): Promise<string> {
-  const bytes = await file.array();
-  const  = .from(bytes);
+  const bytes = await file.arrayBuffer();
+  const buffer = Buffer.from(bytes);
 
   return new Promise((resolve, reject) => {
     const uploadStream = cloudinary.uploader.upload_stream(
