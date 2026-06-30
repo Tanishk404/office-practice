@@ -6,7 +6,7 @@ import { IoMdArrowDropdown } from "react-icons/io";
 import { useState } from 'react';
 import clsx from 'clsx';
 import { RiShareBoxLine } from "react-icons/ri";
-import { MdDescription } from "react-icons/fa";
+import { MdDescription } from "react-icons/md";
 
 function Nav2() {
 const [state, setState] = useState<any>([
