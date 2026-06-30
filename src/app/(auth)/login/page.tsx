@@ -15,13 +15,13 @@ export default function LoginPage() {
     e.preventDefault();
     setError(""); 
     if (email && password) {
-      console.log("Admin logged in successfully!");
       const result = await signIn('credentials', {
         email,
         password,
         redirect: false
       })
-
+      console.log(result)
+      console.log("Admin logged in successfully!");
       if(result?.error){
         setError(result.error);
         return;
