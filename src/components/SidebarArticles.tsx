@@ -1,6 +1,17 @@
 import React from 'react';
 
-export default function SidebarArticle({ category, title, text, source }) {
+
+interface SidebarArticleProps {
+  category: string;
+  title: string;
+  text: string;
+  source: string;
+}
+
+
+
+
+export default function SidebarArticle({ category, title, text, source }: SidebarArticleProps) {
   return (
     <div className="border-b border-slate-100 pb-4 last:border-none last:pb-0">
       <span className="bg-[#4caf50] text-white font-bold text-[9px] uppercase px-1.5 py-0.5 rounded-sm tracking-wider inline-block">
