@@ -1,5 +1,5 @@
 import React from 'react';
-import { ALL_ARTICLES, POPULAR_ARTICLES } from '@/models/Articles';
+
 export default function SidebarArticle({ category, title, text, source }) {
   return (
     <div className="border-b border-slate-100 pb-4 last:border-none last:pb-0">
