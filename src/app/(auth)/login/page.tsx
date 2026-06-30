@@ -27,7 +27,8 @@ export default function LoginPage() {
         return;
       }
 
-      router.push("/admin/dashboard");
+      // router.push("/admin/dashboard");
+      window.location.href = "/admin/dashboard";
     } else {
       // Galat details daalne par error message render hoga
       setError("Invalid Admin Email or Password. Please try again.");
