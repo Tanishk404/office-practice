@@ -68,7 +68,7 @@ export default function Nav() {
             </button>
           </div>
           <div className="bg-white p-1 rounded shrink-0 shadow-sm border border-slate-100 mx-auto sm:mx-0">
-            <Image className="rounded-sm" alt="Innovative Publication" src="/ip-cp-logo.png"
+            <Image className="rounded-sm" alt="Innovative Publication" src="/Ip-cp-logo.png"
               width={85} height={34} style={{ objectFit: 'contain' }} />
           </div>
         </div>
